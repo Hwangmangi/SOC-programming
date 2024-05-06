@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="RAM_camera_synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1422931070">
+  <File Type="RDS-DCP" Name="RAM_camera.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/RAM_camera_synth_1/constrs_in.xml"/>
+  <File Type="RDS-UTIL-PB" Name="RAM_camera_utilization_synth.pb"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/RAM_camera_synth_1/sources.xml"/>
+  <File Type="RDS-PROPCONSTRS" Name="RAM_camera_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="RAM_camera.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/RAM_camera_synth_1/RAM_camera_synth_1.psg"/>
+  <File Type="RDS-RDS" Name="RAM_camera.vds"/>
+  <File Type="RDS-UTIL" Name="RAM_camera_utilization_synth.rpt"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="RAM_camera_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="RAM_camera_timing_summary_synth.pb"/>
+  <File Type="VDS-HWDEF" Name="RAM_camera.hwdef"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RAM_camera">
+    <File Path="$PSRCDIR/sources_1/ip/RAM_camera/RAM_camera.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/ip/RAM_camera.xco"/>
+        <Attr Name="ImportTime" Val="1417425630"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="RAM_camera"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RAM_camera">
+    <File Path="$PSRCDIR/sources_1/ip/RAM_camera/RAM_camera.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/ip/RAM_camera.xco"/>
+        <Attr Name="ImportTime" Val="1417425630"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="RAM_camera"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

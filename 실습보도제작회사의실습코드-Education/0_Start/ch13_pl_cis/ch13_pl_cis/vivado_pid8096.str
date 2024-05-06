@@ -1,0 +1,629 @@
+/*
+
+Vivado v2014.4_63036 (64-bit)
+SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+Process ID: 8096
+
+Current time: 	2/6/15 3:56:07 PM
+Time zone: 	Korea Standard Time (Asia/Seoul)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+
+Java version: 	1.8.0_05 64-bit
+Java home: 	C:/Xilinx/Vivado/2014.4/tps/win64/jre
+
+User name: 	Administrator
+User directory: D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis
+User country: 	KR
+User language: 	ko
+User locale: 	ko_KR
+Vivado preferences path: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2014.4/vivado.ini
+Vivado layouts directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2014.4/layouts/application
+
+GUI allocated memory:	191 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 421 MB
+
+*/
+
+// TclEventType: START_GUI
+// HColorUtils.generateUniqueColorPalette (num colors: 55) elapsed time: 0.5s
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// cm:N (ch:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 44 MB (+43565kb) [00:00:04]
+// [Engine Memory]: 356 MB (+221727kb) [00:00:04]
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 376 MB (+21303kb) [00:00:04]
+// [GUI Memory]: 50 MB (+6304kb) [00:00:04]
+// [Engine Memory]: 393 MB (+18014kb) [00:00:04]
+// [GUI Memory]: 52 MB (+1699kb) [00:00:05]
+// [Engine Memory]: 419 MB (+26738kb) [00:00:05]
+// [Engine Memory]: 419 MB (+606kb) [00:00:05]
+// Tcl Message: open_project D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/work_edu/ch13_pl_cis' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'. 
+// [Engine Memory]: 422 MB (+2674kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 424 MB (+2011kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 426 MB (+1708kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 52 MB (+160kb) [00:00:06]
+// [GUI Memory]: 52 MB (+512kb) [00:00:06]
+// [GUI Memory]: 53 MB (+1060kb) [00:00:06]
+// [GUI Memory]: 54 MB (+512kb) [00:00:06]
+// [GUI Memory]: 54 MB (+512kb) [00:00:06]
+// [GUI Memory]: 55 MB (+1060kb) [00:00:06]
+// [GUI Memory]: 56 MB (+512kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 57 MB (+1024kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 57 MB (+548kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 428 MB (+2379kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 428 MB (+4kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 428 MB (+57kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 429 MB (+765kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 431 MB (+2015kb) [00:00:06]
+// [Engine Memory]: 431 MB (+741kb) [00:00:06]
+// [Engine Memory]: 433 MB (+2154kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 434 MB (+389kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 434 MB (+774kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 436 MB (+1773kb) [00:00:07]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 437 MB (+397kb) [00:00:07]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 438 MB (+1449kb) [00:00:07]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: ch13_pl_cis; location: D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis; part: xc7z020clg484-1
+// [Engine Memory]: 440 MB (+1912kb) [00:00:07]
+dismissDialog("Open Project"); // cm:N (ch:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 441 MB. GUI used memory: 29 MB. Current time: 2/6/15 3:56:09 PM
+// [Engine Memory]: 441 MB (+1089kb) [00:00:09]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 449 MB (+8142kb) [00:00:09]
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 35 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top - ar_top (top.vhd)]", 1); // u:k (I:JPanel, ch:JFrame)
+// [GUI Memory]: 57 MB (+225kb) [00:00:44]
+// [Engine Memory]: 450 MB (+1343kb) [00:03:41]
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (ch:JFrame): Add Sources: addNotify
+// [Engine Memory]: 455 MB (+5242kb) [00:03:45]
+// Elapsed time: 184 seconds
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // a:JButton (H:JPanel, b:g)
+// [Engine Memory]: 458 MB (+3559kb) [00:03:50]
+// [GUI Memory]: 58 MB (+885kb) [00:03:55]
+// Elapsed time: 22 seconds
+String[] filenames31467 = {"D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/RAM_to_TFTLCD.vhd", "D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_to_RAM.vhd", "D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/clk_generator.vhd", "D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/top.vhd"};
+setFileChooser(filenames31467);
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File..."); // a:JButton (H:JPanel, b:g)
+// I:ac (b:g): Create Source File: addNotify
+// [GUI Memory]: 60 MB (+1355kb) [00:04:15]
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "camera"); // an:JTextField (JPanel:JComponent, I:ac)
+// [GUI Memory]: 64 MB (+4652kb) [00:04:20]
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "camera_i2c"); // an:JTextField (JPanel:JComponent, I:ac)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, I:ac)
+dismissDialog("Create Source File"); // I:ac (b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File..."); // a:JButton (H:JPanel, b:g)
+// I:ac (b:g): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "camera_i2c_command"); // an:JTextField (JPanel:JComponent, I:ac)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, I:ac)
+dismissDialog("Create Source File"); // I:ac (b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File..."); // a:JButton (H:JPanel, b:g)
+// I:ac (b:g): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "camera_i2c_rom"); // an:JTextField (JPanel:JComponent, I:ac)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, I:ac)
+dismissDialog("Create Source File"); // I:ac (b:g)
+// Elapsed time: 44 seconds
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'f' command handler elapsed time: 100 seconds
+dismissDialog("Add Sources"); // b:g (ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/RAM_to_TFTLCD.vhd D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/clk_generator.vhd D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_to_RAM.vhd D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/top.vhd} 
+// Tcl Message: close [ open D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c.v 
+// Tcl Message: close [ open D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c_rom.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c_rom.v 
+// Tcl Message: close [ open D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c_command.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c_command.v 
+// L:ac (ch:JFrame): Define Modules: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, L:ac)
+// TclEventType: DG_GRAPH_STALE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, R:JDialog)
+dismissDialog("Define Modules"); // L:ac (ch:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 65 MB (+881kb) [00:05:29]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 65 MB (+391kb) [00:05:55]
+// [GUI Memory]: 68 MB (+2642kb) [00:05:55]
+// HMemoryUtils.trashcanNow. Engine heap size: 462 MB. GUI used memory: 34 MB. Current time: 2/6/15 4:01:59 PM
+// [Engine Memory]: 462 MB (+3481kb) [00:05:59]
+// Elapsed time: 58 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top - ar_top (top.vhd), component_RAM_to_TFTLCD - RAM_to_TFTLCD - ar_RAM_to_TFTLCD (RAM_to_TFTLCD.vhd)]", 10, false); // u:k (I:JPanel, ch:JFrame)
+// [GUI Memory]: 71 MB (+3422kb) [00:06:28]
+// [Engine Memory]: 462 MB (+720kb) [00:06:29]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top - ar_top (top.vhd), component_RAM_camera - RAM_camera (RAM_camera.xci)]", 9, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top - ar_top (top.vhd), component_RAM_to_TFTLCD - RAM_to_TFTLCD - ar_RAM_to_TFTLCD (RAM_to_TFTLCD.vhd)]", 10, false); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 462 MB (+118kb) [00:06:30]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top - ar_top (top.vhd), component_camera_to_RAM - camera_to_RAM - ar_camera_to_RAM (camera_to_RAM.vhd)]", 8, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top - ar_top (top.vhd), component_clk_generator_i2c - clk_generator - ar_clk_generator (clk_generator.vhd)]", 6, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top - ar_top (top.vhd), component_clk_generator_TFTLCD - clk_generator - ar_clk_generator (clk_generator.vhd)]", 5, false); // u:k (I:JPanel, ch:JFrame)
+// [GUI Memory]: 74 MB (+3148kb) [00:06:33]
+// [Engine Memory]: 465 MB (+2777kb) [00:06:35]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top - ar_top (top.vhd), component_camera_i2c - camera_i2c (camera_i2c.v)]", 7, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top - ar_top (top.vhd), component_camera_i2c - camera_i2c (camera_i2c.v)]", 7, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+// [Engine Memory]: 467 MB (+2330kb) [00:06:37]
+// Elapsed time: 53 seconds
+selectCodeEditor("camera_i2c.v", 282, 207); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "camera_i2c.v", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("camera_i2c.v", 117, 171); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 474 MB (+7372kb) [00:07:31]
+selectCodeEditor("camera_i2c.v", 69, 116); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 75 MB (+1150kb) [00:07:33]
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, camera_i2c.v]", 2, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, camera_i2c.v]", 2, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+// [GUI Memory]: 75 MB (+2kb) [00:07:37]
+// [GUI Memory]: 77 MB (+2538kb) [00:07:37]
+// [GUI Memory]: 80 MB (+2572kb) [00:07:38]
+selectTab((HResource) null, (HResource) null, "Messages", 1); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, ch:JFrame)
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // h:JCheckBox (JPanel:JComponent, ch:JFrame): FALSE
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // h:JCheckBox (JPanel:JComponent, ch:JFrame): FALSE
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // h:JCheckBox (JPanel:JComponent, ch:JFrame): FALSE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-806] Syntax error near ;. [D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c.v:2]. ]", 2, false); // ae:k (JViewport:JComponent, ch:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\work_edu\Education\0_Start\ch13_pl_cis\ch13_pl_cis\ch13_pl_cis.srcs\sources_1\new\camera_i2c.v;-;;-;15;-;line;-;2;-;;-;15;-;"); // ae:k (JViewport:JComponent, ch:JFrame)
+// [GUI Memory]: 81 MB (+1041kb) [00:07:45]
+selectCodeEditor("camera_i2c.v", 134, 27); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("camera_i2c.v", 80, 186); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "camera_i2c.v", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 82 MB (+841kb) [00:08:05]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, camera_i2c.v]", 2, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, camera_i2c.v]", 2, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near ;. [D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c.v:1]. ]", 4, false); // ae:k (JViewport:JComponent, ch:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\work_edu\Education\0_Start\ch13_pl_cis\ch13_pl_cis\ch13_pl_cis.srcs\sources_1\new\camera_i2c.v;-;;-;15;-;line;-;1;-;;-;15;-;"); // ae:k (JViewport:JComponent, ch:JFrame)
+// [GUI Memory]: 82 MB (+711kb) [00:08:12]
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-806] Syntax error near ;. [D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c.v:1]. ]", 2, false); // ae:k (JViewport:JComponent, ch:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\work_edu\Education\0_Start\ch13_pl_cis\ch13_pl_cis\ch13_pl_cis.srcs\sources_1\new\camera_i2c.v;-;;-;15;-;line;-;1;-;;-;15;-;"); // ae:k (JViewport:JComponent, ch:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-806] Syntax error near ;. [D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c.v:1]. ]", 2, false); // ae:k (JViewport:JComponent, ch:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\work_edu\Education\0_Start\ch13_pl_cis\ch13_pl_cis\ch13_pl_cis.srcs\sources_1\new\camera_i2c.v;-;;-;15;-;line;-;1;-;;-;15;-;"); // ae:k (JViewport:JComponent, ch:JFrame)
+// Elapsed time: 33 seconds
+selectCodeEditor("camera_i2c.v", 223, 155); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "camera_i2c.v", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, camera_i2c.v]", 2, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, camera_i2c.v]", 2, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "camera_i2c.v", 1, true, false); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, camera_i2c.v]", 4, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, camera_i2c_rom.v]", 6, false, true, false, false, false, false); // u:k (I:JPanel, ch:JFrame) - Shift Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, camera_i2c_rom.v]", 6, false, false, false, false, true, false); // u:k (I:JPanel, ch:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// ay:N (ch:JFrame): Remove Sources: addNotify
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete  project local files/directories from disk", true); // h:JCheckBox (JPanel:JComponent, ay:N): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ay:N)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F:b
+dismissDialog("Remove Sources"); // ay:N (ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files {D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c.v D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c_command.v D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c_rom.v} 
+// Tcl Message: file delete -force D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c.v D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c_command.v D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c_rom.v 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 475 MB (+335kb) [00:09:01]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 9, true, false, false, false, true, false); // u:k (I:JPanel, ch:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (ch:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File..."); // a:JButton (H:JPanel, b:g)
+// I:ac (b:g): Create Source File: addNotify
+// [Engine Memory]: 476 MB (+1380kb) [00:09:06]
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "VHDL", 3); // bS:c (JPanel:JComponent, I:ac)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "camera_i2c"); // an:JTextField (JPanel:JComponent, I:ac)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, I:ac)
+dismissDialog("Create Source File"); // I:ac (b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File..."); // a:JButton (H:JPanel, b:g)
+// I:ac (b:g): Create Source File: addNotify
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "VHDL", 3); // bS:c (JPanel:JComponent, I:ac)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "camera_i2c_command"); // an:JTextField (JPanel:JComponent, I:ac)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, I:ac)
+dismissDialog("Create Source File"); // I:ac (b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File..."); // a:JButton (H:JPanel, b:g)
+// I:ac (b:g): Create Source File: addNotify
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "VHDL", 3); // bS:c (JPanel:JComponent, I:ac)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "camera_i2c_rom"); // an:JTextField (JPanel:JComponent, I:ac)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, I:ac)
+dismissDialog("Create Source File"); // I:ac (b:g)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'f' command handler elapsed time: 29 seconds
+dismissDialog("Add Sources"); // b:g (ch:JFrame)
+// Tcl Message: close [ open D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c_rom.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c_rom.vhd 
+// [Engine Memory]: 476 MB (+24kb) [00:09:32]
+// Tcl Message: close [ open D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c.vhd 
+// Tcl Message: close [ open D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c_command.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c_command.vhd 
+// L:ac (ch:JFrame): Define Modules: addNotify
+// [Engine Memory]: 478 MB (+1818kb) [00:09:33]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, L:ac)
+// TclEventType: DG_GRAPH_STALE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, R:JDialog)
+// [Engine Memory]: 480 MB (+2379kb) [00:09:35]
+dismissDialog("Define Modules"); // L:ac (ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 485 MB (+5054kb) [00:10:24]
+// [Engine Memory]: 485 MB (+106kb) [00:10:27]
+// HMemoryUtils.trashcanNow. Engine heap size: 485 MB. GUI used memory: 42 MB. Current time: 2/6/15 4:06:29 PM
+// Elapsed time: 53 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top - ar_top (top.vhd), component_camera_i2c - camera_i2c]", 5, false); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 488 MB (+3026kb) [00:10:28]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top - ar_top (top.vhd), component_camera_i2c - camera_i2c]", 5, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top - ar_top (top.vhd), component_camera_to_RAM - camera_to_RAM - ar_camera_to_RAM (camera_to_RAM.vhd)]", 6, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top - ar_top (top.vhd), component_camera_i2c - camera_i2c]", 5, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top - ar_top (top.vhd), component_camera_i2c - camera_i2c]", 5, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top - ar_top (top.vhd), component_RAM_to_TFTLCD - RAM_to_TFTLCD - ar_RAM_to_TFTLCD (RAM_to_TFTLCD.vhd)]", 8, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, camera_i2c_rom - Behavioral (camera_i2c_rom.vhd)]", 9, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, camera_i2c_rom - Behavioral (camera_i2c_rom.vhd)]", 9, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+// [GUI Memory]: 83 MB (+786kb) [00:10:33]
+selectCodeEditor("camera_i2c_rom.vhd", 145, 254); // bi:J (JPanel:JComponent, ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, camera_i2c.vhd]", 2, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, camera_i2c_command.vhd]", 3, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, camera_i2c.vhd]", 2, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, camera_i2c.vhd]", 2, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+selectCodeEditor("camera_i2c.vhd", 101, 257); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "camera_i2c.vhd", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 28 seconds
+selectCodeEditor("camera_i2c.vhd", 187, 264); // bi:J (JPanel:JComponent, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, camera_i2c_command.vhd]", 2, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, camera_i2c_command.vhd]", 2, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+selectCodeEditor("camera_i2c_command.vhd", 169, 219); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "camera_i2c_command.vhd", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top - ar_top (top.vhd), component_camera_to_RAM - camera_to_RAM - ar_camera_to_RAM (camera_to_RAM.vhd)]", 5, false); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 491 MB (+3792kb) [00:11:25]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top - ar_top (top.vhd), component_camera_i2c - camera_i2c - ar_camera_i2c (camera_i2c.vhd)]", 4, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top - ar_top (top.vhd), component_camera_i2c - camera_i2c - ar_camera_i2c (camera_i2c.vhd)]", 4, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+// [GUI Memory]: 87 MB (+3619kb) [00:11:25]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top - ar_top (top.vhd), component_camera_i2c - camera_i2c - ar_camera_i2c (camera_i2c.vhd), component_camera_i2c_rom - camera_i2c_rom - Behavioral (camera_i2c_rom.vhd)]", 5, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top - ar_top (top.vhd), component_camera_i2c - camera_i2c - ar_camera_i2c (camera_i2c.vhd), component_camera_i2c_rom - camera_i2c_rom - Behavioral (camera_i2c_rom.vhd)]", 5, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+selectCodeEditor("camera_i2c_rom.vhd", 91, 242); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("camera_i2c_rom.vhd", 94, 269); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "camera_i2c_rom.vhd", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 88 MB (+1071kb) [00:11:37]
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top - ar_top (top.vhd), component_camera_i2c - camera_i2c - ar_camera_i2c (camera_i2c.vhd)]", 4); // u:k (I:JPanel, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (ch:JFrame): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a:JRadioButton (JPanel:JComponent, b:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_CREATE_FILE, "Create File..."); // a:JButton (H:JPanel, b:g)
+// G:ac (ch:JFrame): Create Constraints File: addNotify
+setText(PAResourceAtoD.CreateConstraintsFilePanel_FILE_NAME, "top", true); // an:JTextField (JPanel:JComponent, G:ac)
+// HOptionPane Warning: ''top.xdc' already exists. Please enter another name. (Create Constraints File)'
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:ac)
+selectButton("PAResourceAtoD.CreateConstraintsFilePanel_FILE_WITH_SPECIFIED_NAME_ALREADY_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, R:JDialog)
+setText(PAResourceAtoD.CreateConstraintsFilePanel_FILE_NAME, "top"); // an:JTextField (JPanel:JComponent, G:ac)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, G:ac)
+dismissDialog("Create Constraints File"); // G:ac (ch:JFrame)
+selectButton("CANCEL", "Cancel"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'f' command handler elapsed time: 7 seconds
+dismissDialog("Add Sources"); // b:g (ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 8); // u:k (I:JPanel, ch:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 8); // u:k (I:JPanel, ch:JFrame)
+// Elapsed time: 32 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 9, true, false, false, false, true, false); // u:k (I:JPanel, ch:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (ch:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_CREATE_FILE, "Create File..."); // a:JButton (H:JPanel, b:g)
+// G:ac (ch:JFrame): Create Constraints File: addNotify
+setText(PAResourceAtoD.CreateConstraintsFilePanel_FILE_NAME, "top", true); // an:JTextField (JPanel:JComponent, G:ac)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:ac)
+dismissDialog("Create Constraints File"); // G:ac (ch:JFrame)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_CREATE_FILE, "Create File..."); // a:JButton (H:JPanel, b:g)
+// G:ac (ch:JFrame): Create Constraints File: addNotify
+/*
+java.util.NoSuchElementException (See D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/vivado_pid8096.debug)
+*/
+/*
+java.util.NoSuchElementException (See D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/vivado_pid8096.debug)
+*/
+selectButton("CANCEL", "Cancel"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+dismissDialog("Add Sources"); // b:g (ch:JFrame)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, G:ac)
+// 'f' command handler elapsed time: 5 seconds
+dismissDialog("Create Constraints File"); // G:ac (ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (ch:JFrame): Add Sources: addNotify
+/*
+java.util.NoSuchElementException (See D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/vivado_pid8096.debug)
+*/
+/*
+java.util.NoSuchElementException (See D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/vivado_pid8096.debug)
+*/
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a:JRadioButton (JPanel:JComponent, b:g)
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a:JRadioButton (JPanel:JComponent, b:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_CREATE_FILE, "Create File..."); // a:JButton (H:JPanel, b:g)
+// G:ac (ch:JFrame): Create Constraints File: addNotify
+setText(PAResourceAtoD.CreateConstraintsFilePanel_FILE_NAME, "top", true); // an:JTextField (JPanel:JComponent, G:ac)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:ac)
+dismissDialog("Create Constraints File"); // G:ac (ch:JFrame)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'f' command handler elapsed time: 6 seconds
+dismissDialog("Add Sources"); // b:g (ch:JFrame)
+// Tcl Message: close [ open D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/constrs_1/new/top.xdc w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/constrs_1/new/top.xdc 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 8); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, top.xdc]", 10, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, top.xdc]", 10, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+selectCodeEditor("top.xdc", 134, 279); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "top.xdc", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Fri Feb 06 16:08:47 2015] Launched synth_1... Run output will be captured here: D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.runs/synth_1/runme.log [Fri Feb 06 16:08:47 2015] Launched impl_1... Run output will be captured here: D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.runs/impl_1/runme.log 
+// Elapsed time: 23 seconds
+selectCodeEditor("top.xdc", 218, 251); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 93 MB (+5111kb) [00:13:09]
+// TclEventType: RUN_COMPLETED
+// [Engine Memory]: 497 MB (+5672kb) [00:13:22]
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 93 MB (+189kb) [00:14:07]
+// Elapsed time: 58 seconds
+selectCodeEditor(PAResourceItoN.LogView_MONITOR, 286, 62); // H:bi (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 94 MB (+1126kb) [00:14:26]
+// TclEventType: RUN_COMPLETED
+// [Engine Memory]: 502 MB (+6053kb) [00:15:12]
+// [Engine Memory]: 503 MB (+163kb) [00:15:16]
+// Elapsed time: 77 seconds
+selectCodeEditor("top.xdc", 201, 138); // bi:J (JPanel:JComponent, ch:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 25, true); // w:Y (v:I, ch:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// [Engine Memory]: 503 MB (+552kb) [00:15:28]
+// [Engine Memory]: 505 MB (+2174kb) [00:15:28]
+// [GUI Memory]: 95 MB (+938kb) [00:15:29]
+// HMemoryUtils.trashcanNow. Engine heap size: 508 MB. GUI used memory: 48 MB. Current time: 2/6/15 4:11:30 PM
+// Tcl Message: open_hw 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Open Target]", 26, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+// [Engine Memory]: 510 MB (+4964kb) [00:15:30]
+selectMenuItem((HResource) null, "localhost:3121,xilinx_tcf/Xilinx/Port_#0004.Hub_#0004,PARAM.FREQUENCY:6000000"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// cm:N (ch:JFrame):  Open Hardware Target : addNotify
+// Tcl Message: connect_hw_server -url localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2014.4   **** Build date : Nov 18 2014-18:09:44     ** Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.  INFO: hw_server application started INFO: Use Ctrl-C to exit hw_server application   ****** Xilinx hw_server v2014.4   **** Build date : Nov 18 2014-18:09:44     ** Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.  INFO: hw_server application started INFO: Use Ctrl-C to exit hw_server application   
+// Tcl Message: current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/Port_#0004.Hub_#0004] 
+// TclEventType: HW_TARGET_CHANGE
+// Tcl Message: set_property PARAM.FREQUENCY 6000000 [get_hw_targets */xilinx_tcf/Xilinx/Port_#0004.Hub_#0004] 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/Port_#0004.Hub_#0004 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.runs/impl_1/top.bit} [lindex [get_hw_devices] 1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 1] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices] 1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 1] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Open Hardware Target"); // cm:N (ch:JFrame)
+// [Engine Memory]: 510 MB (+65kb) [00:15:47]
+// [Engine Memory]: 510 MB (+49kb) [00:15:52]
+// [Engine Memory]: 513 MB (+3371kb) [00:16:02]
+// Elapsed time: 54 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 27, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z020_1"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ac)
+// cm:N (ch:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.runs/impl_1/top.bit} [lindex [get_hw_devices] 1] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 748.656 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 1] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'p' command handler elapsed time: 10 seconds
+dismissDialog("Program Device"); // cm:N (ch:JFrame)
+// Elapsed time: 38 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 27, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z020_1"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ac)
+// cm:N (ch:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.runs/impl_1/top.bit} [lindex [get_hw_devices] 1] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 1] 
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 1] 
+// Tcl Message: ERROR: [Labtools 27-2312] Device xc7z020_1 is no longer available. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device. 
+dismissDialog("Program Device"); // cm:N (ch:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Open Target]", 26, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem((HResource) null, "localhost:3121,xilinx_tcf/Xilinx/Port_#0004.Hub_#0004,PARAM.FREQUENCY:6000000"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// cm:N (ch:JFrame):  Open Hardware Target : addNotify
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: disconnect_hw_server localhost 
+// Tcl Message: connect_hw_server -url localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// [Engine Memory]: 516 MB (+3055kb) [00:17:32]
+// Elapsed time: 15 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, cm:N)
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// [GUI Memory]: 96 MB (+1436kb) [00:17:47]
+// Tcl Message: INFO: [Labtools 27-2058] connect_hw_server command cancelled. 
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:43 . Memory (MB): peak = 751.063 ; gain = 2.406 
+// Tcl Message: INFO: [Common 17-344] 'connect_hw_server' was cancelled 
+
+// Exiting Vivado with a status code 0 at 2/6/15 4:14:10 PM...
+// Elapsed time: 00:18:08

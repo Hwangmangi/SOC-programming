@@ -1,0 +1,75 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4_63036 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
+| Date         : Fri Feb 06 16:09:58 2015
+| Host         : huins-PC running 64-bit major release  (build 7600)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7z020
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    22 |
+| Minimum Number of register sites lost to control set restrictions |    51 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              81 |           56 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              91 |           34 |
+| Yes          | No                    | No                     |              31 |           12 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             114 |           38 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+------------------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+----------------+
+|          Clock Signal         |                                    Enable Signal                                   |                            Set/Reset Signal                            | Slice Load Count | Bel Load Count |
++-------------------------------+------------------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+----------------+
+|  camera_MCLK_OBUF_BUFG        |                                                                                    |                                                                        |                2 |              2 |
+|  camera_PCLK_IBUF_BUFG        | component_camera_to_RAM/n_0_sig_RAM_write_data[15]_i_2                             | component_camera_to_RAM/n_0_sig_RAM_write_data[15]_i_1                 |                5 |              8 |
+|  camera_PCLK_IBUF_BUFG        | component_camera_to_RAM/sig_temp                                                   | component_camera_to_RAM/n_0_sig_RAM_write_data[15]_i_1                 |                5 |              8 |
+|  n_0_i2c_rom_data_reg[22]_i_2 | component_camera_i2c/component_camera_i2c_command/n_0_sig_count[7]_i_2             | component_camera_i2c/component_camera_i2c_command/n_0_sig_count[7]_i_1 |                4 |              8 |
+|  n_0_i2c_rom_data_reg[22]_i_2 | component_camera_i2c/n_0_sig_i2c_rom_address[7]_i_2                                | component_camera_i2c/component_camera_i2c_rom/O2                       |                2 |              8 |
+|  n_0_i2c_rom_data_reg[22]_i_2 | component_camera_i2c/n_0_sig_initialize_count[7]_i_1                               |                                                                        |                4 |              8 |
+|  TFTLCD_TCLK_OBUF_BUFG        |                                                                                    |                                                                        |                8 |              9 |
+|  n_0_i2c_rom_data_reg[22]_i_2 |                                                                                    | component_camera_i2c/sig_i2c_rom_address_reg[7]                        |                6 |             10 |
+|  TFTLCD_TCLK_OBUF_BUFG        |                                                                                    | component_RAM_to_TFTLCD/n_0_sig_RAM_read_data[15]_i_1                  |               11 |             16 |
+|  TFTLCD_TCLK_OBUF_BUFG        |                                                                                    | component_RAM_to_TFTLCD/sig_v_sync                                     |                4 |             16 |
+|  TFTLCD_TCLK_OBUF_BUFG        | component_RAM_to_TFTLCD/sig_v_sync                                                 | component_RAM_to_TFTLCD/n_0_sig_v_count[0]_i_1                         |                4 |             16 |
+|  camera_MCLK_OBUF_BUFG        |                                                                                    | component_clk_generator_TFTLCD/n_0_sig_count[0]_i_1__0                 |                4 |             16 |
+|  camera_MCLK_OBUF_BUFG        |                                                                                    | component_clk_generator_i2c/n_0_sig_count[0]_i_1__1                    |                4 |             16 |
+|  camera_PCLK_IBUF_BUFG        | component_camera_to_RAM/n_0_sig_v_count[0]_i_1__0                                  | component_camera_to_RAM/sig_CVSYNC                                     |                4 |             16 |
+|  camera_PCLK_IBUF_BUFG        | component_camera_to_RAM/sig_temp                                                   | component_camera_to_RAM/n_0_sig_h_count[0]_i_1__0                      |                4 |             16 |
+|  TFTLCD_TCLK_OBUF_BUFG        | component_RAM_to_TFTLCD/sig_RAM_read_address                                       | component_RAM_to_TFTLCD/clear                                          |                5 |             17 |
+|  camera_PCLK_IBUF_BUFG        |                                                                                    | component_camera_to_RAM/n_0_sig_RAM_write_address[16]_i_1              |                5 |             17 |
+|  camera_PCLK_IBUF_BUFG        | component_camera_to_RAM/wea                                                        | component_camera_to_RAM/sig_CVSYNC                                     |                5 |             17 |
+| ~TFTLCD_TCLK_OBUF_BUFG        |                                                                                    |                                                                        |               15 |             20 |
+|  camera_PCLK_IBUF_BUFG        |                                                                                    |                                                                        |               15 |             23 |
+|  n_0_i2c_rom_data_reg[22]_i_2 | component_camera_i2c/component_camera_i2c_command/n_0_sig_i2c_command_data[27]_i_1 |                                                                        |                8 |             23 |
+|  n_0_i2c_rom_data_reg[22]_i_2 |                                                                                    |                                                                        |               16 |             27 |
++-------------------------------+------------------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+----------------+
+
+

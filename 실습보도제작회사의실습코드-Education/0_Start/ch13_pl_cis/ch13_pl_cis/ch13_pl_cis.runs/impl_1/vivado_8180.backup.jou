@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4_63036 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Fri Feb 06 16:09:24 2015
+# Process ID: 6372
+# Log file: D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.runs/impl_1/top.vdi
+# Journal file: D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace

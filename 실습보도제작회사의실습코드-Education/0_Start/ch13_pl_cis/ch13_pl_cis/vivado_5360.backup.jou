@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2014.4_63036 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Fri Feb 06 15:55:59 2015
+# Process ID: 8096
+# Log file: D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/vivado.log
+# Journal file: D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.xpr
+add_files -norecurse {D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/RAM_to_TFTLCD.vhd D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/clk_generator.vhd D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_to_RAM.vhd D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/top.vhd}
+close [ open D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c.v w ]
+add_files D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c.v
+close [ open D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c_rom.v w ]
+add_files D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c_rom.v
+close [ open D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c_command.v w ]
+add_files D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c_command.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+remove_files {D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c.v D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c_command.v D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c_rom.v}
+file delete -force D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c.v D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c_command.v D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c_rom.v
+close [ open D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c_rom.vhd w ]
+add_files D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c_rom.vhd
+close [ open D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c.vhd w ]
+add_files D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c.vhd
+close [ open D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c_command.vhd w ]
+add_files D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/sources_1/new/camera_i2c_command.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/constrs_1/new/top.xdc w ]
+add_files -fileset constrs_1 D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.srcs/constrs_1/new/top.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/Port_#0004.Hub_#0004]
+set_property PARAM.FREQUENCY 6000000 [get_hw_targets */xilinx_tcf/Xilinx/Port_#0004.Hub_#0004]
+open_hw_target
+set_property PROGRAM.FILE {D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.runs/impl_1/top.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.runs/impl_1/top.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {D:/work_edu/Education/0_Start/ch13_pl_cis/ch13_pl_cis/ch13_pl_cis.runs/impl_1/top.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+disconnect_hw_server localhost
+connect_hw_server -url localhost:3121
